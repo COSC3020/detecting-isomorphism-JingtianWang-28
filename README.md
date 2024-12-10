@@ -15,3 +15,11 @@ the function and run automatically when you commit through a GitHub action.
 ## Runtime Analysis
 
 What is the worst-case big $\Theta$ time complexity of your algorithm?
+
+///
+
+G1 has n vertices, G2 has n vertices, and mapping G1 to G2 requires n! permutations, with a time complexity of O(n!)
+
+Each mapping attempt needs to check the consistency of the adjacent relationship of the graph, with a time complexity of O(n^2)
+
+The total time complexity is: theta(n!*n^2)
